@@ -53,7 +53,7 @@
                             <td>{{ $userblog->name }}</td>
                             <td>{{ $userblog->title }}</td>                                
                             <td>{{ $userblog->description }}</td>
-                            <td> <a href="" class="btn waves-effect waves-light btn-warning">Edit</a></td>
+                            <td> <a href="{{route('blog.edit')}}" class="btn waves-effect waves-light btn-warning">Edit</a></td>
                             <td> <button onclick="BlogDelete('{{$userblog->id}}')" type="button" class="btn waves-effect waves-light btn-danger">Delete</button></td>                              
                         </tr>
                         @endforeach
